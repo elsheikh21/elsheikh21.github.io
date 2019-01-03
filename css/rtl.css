@@ -1,0 +1,423 @@
+/*
+Theme Name: Blossom Coach Pro
+
+Adding support for languages written in a Right To Left (RTL) direction is easy -
+it's just a matter of overwriting all the horizontal positioning attributes
+of your CSS stylesheet in a separate stylesheet file named rtl.css.
+
+https://codex.wordpress.org/Right-to-Left_Language_Support
+
+*/
+
+
+body {
+	direction: rtl;
+	unicode-bidi: embed;
+}
+
+.sticky-t-bar .blossomthemes-email-newsletter-wrapper .text-holder {
+	padding-right: 0;
+	padding-left: 10px;
+}
+
+.sticky-t-bar .blossomthemes-email-newsletter-wrapper form input[type="text"],
+.sticky-t-bar .blossomthemes-email-newsletter-wrapper form input[type="email"] {
+	position: relative;
+	z-index: 1;
+}
+
+.header-t .top-left span {
+	margin-right: 0;
+	margin-left: 30px;
+}
+
+.header-t .top-left .fa {
+	margin-right: 0;
+	margin-left: 5px;
+}
+
+.header-t .top-right {
+	text-align: left;
+}
+
+.top-right .header-social+.header-search {
+	border-left: none;
+	border-right: 1px solid #e5e5e5;
+	padding-left: 0;
+	padding-right: 15px;
+	margin-left: 0;
+	margin-right: 10px;
+}
+
+.main-header .menu-wrap,
+.pricing-block .price {
+	text-align: left;
+}
+
+.main-navigation ul ul,
+.banner-caption .banner-wrap,
+section[class*="-section"] .widget_blossomtheme_featured_page_widget .text-holder,
+.widget_blossomtheme_companion_cta_widget .right .blossomtheme-cta-container,
+.widget_bttk_icon_text_widget,
+.pricing-block .title,
+.pricing-block .pricing-header,
+.pricing-block .pricing-feat,
+.achievement-section .achievement-content,
+.event-block .event-content,
+.newsletter-section .blossomthemes-email-newsletter-wrapper .text-holder,
+section.contact-section,
+.widget_blossomthemes_stat_counter_widget .blossomthemes-sc-holder,
+.widget_blossom_coach_pro_blockquote .blockqote-widget,
+section[class*="-section"] .widget_bttk_description_widget,
+.single .related-articles .article-block .entry-header .entry-title {
+	text-align: right;
+}
+
+.site-branding.icon-text .site-title-wrap {
+	padding-left: 0;
+	padding-right: 10px;
+}
+
+.pricing-section .widget_bcp_pt_widget {
+	margin-right: 0;
+	margin-left: 2%;
+}
+
+.pricing-section .widget_bcp_pt_widget:last-child {
+	margin-left: 0;
+}
+
+.event-wrap .event-block {
+	margin-right: 0;
+	margin-left: 2.5%;
+}
+
+.event-wrap .event-block:nth-child(2n) {
+	margin-left: 0;
+}
+
+.event-block .event-date {
+	float: right;
+}
+
+.event-block .event-content {
+	text-align: right;
+	padding-left: 0;
+	padding-right: 30px;
+}
+
+.blog-section article.post,
+.block {
+	text-align: right;
+	margin-right: 0;
+	margin-left: 2.5%;
+}
+
+.blog-section article.post:nth-child(3n),
+.block:nth-child(3n) {
+	margin-left: 0;
+}
+
+.mejs-unmute>button {
+	margin-right: 0 !important;
+}
+
+section.contact-section .widget .widget-title::after,
+#secondary .widget-title::before,
+.site-footer .widget-title::before,
+.author-content-wrap .author-name::before,
+.comments-area .comments-title::before,
+.comment-respond .comment-reply-title::before,
+.woocommerce-cart #primary .page .entry-content .cart_totals h2::before,
+.woocommerce-checkout #primary .page .entry-content .woocommerce .woocommerce-billing-fields h3::before,
+.woocommerce-checkout #primary .page .entry-content .woocommerce .woocommerce-additional-fields h3::before,
+.page-template-contact .contact-wrap .widget-title::before {
+	left: auto;
+	right: 0;
+}
+
+#primary .page .entry-content #order_review_heading::before {
+	left: auto;
+	right: 25px;
+}
+
+section.contact-section .widget .widget-title span::after,
+#secondary .widget-title::after,
+.site-footer .widget-title::after,
+.author-content-wrap .author-name::after,
+.comments-area .comments-title::after,
+.comment-respond .comment-reply-title::after,
+.woocommerce-cart #primary .page .entry-content .cart_totals h2::after,
+.woocommerce-checkout #primary .page .entry-content .woocommerce .woocommerce-billing-fields h3::after,
+.woocommerce-checkout #primary .page .entry-content .woocommerce .woocommerce-additional-fields h3::after,
+.page-template-contact .contact-wrap .widget-title::after {
+	left: auto;
+	right: 20px;
+}
+
+#primary .page .entry-content #order_review_heading::after {
+	left: auto;
+	right: 45px;
+}
+
+.widget_bttk_contact_social_links .bttk-contact-widget-wrap ul.contact-list li {
+	padding-left: 0;
+	padding-right: 30px;
+}
+
+.widget_bttk_contact_social_links .bttk-contact-widget-wrap ul.contact-list li .fa {
+	left: auto;
+	right: 0;
+}
+
+.widget_blossomthemes_stat_counter_widget .blossomthemes-sc-holder {
+	padding-left: 0;
+	padding-right: 65px;
+}
+
+.widget_blossomthemes_stat_counter_widget .icon-holder {
+	left: auto;
+	right: 0;
+}
+
+.widget_categories ul li,
+.widget_archive ul li,
+.widget_meta ul li,
+.widget_pages ul li,
+.widget_recent_comments ul li,
+.widget_recent_entries ul li,
+.widget_nav_menu ul li,
+.widget_rss ul li {
+	padding-left: 0;
+	padding-right: 20px;
+}
+
+.widget_categories ul li::before,
+.widget_archive ul li::before,
+.widget_meta ul li::before,
+.widget_pages ul li::before,
+.widget_recent_comments ul li::before,
+.widget_recent_entries ul li::before,
+.widget_nav_menu ul li::before,
+.widget_rss ul li::before {
+	left: auto;
+	right: 0;
+}
+
+.btn-link+.edit-link {
+	margin-left: 0;
+	margin-right: 20px;
+}
+
+.single .site-main .has-sticky-share footer.entry-footer {
+	float: none;
+	display: table;
+	clear: both;
+	width: 100%;
+}
+
+.author-social a {
+	margin-right: 0;
+	margin-left: 25px;
+}
+
+.author-social a:last-child {
+	margin-left: 0;
+}
+
+.author-social a .fa {
+	margin-right: 0;
+	margin-left: 5px;
+}
+
+.comment-body .reply .comment-reply-link::before {
+	margin-right: 0;
+	margin-left: 10px;
+}
+
+.single .pagination .nav-previous {
+	float: left;
+	width: 50%;
+}
+
+.single .pagination .nav-next {
+	float: right;
+	width: 50%;
+}
+
+.single .pagination .nav-previous::after {
+	right: 0;
+}
+
+.single .pagination .nav-next::after {
+	left: 0;
+}
+
+.related-articles .latest-title {
+	text-align: center;
+}
+
+.related-articles .article-block,
+.latest-articles .article-block {
+	float: left;
+}
+
+.related-articles .article-block:nth-child(3n+1),
+.latest-articles .article-block:nth-child(3n+1) {
+	clear: both;
+}
+
+.list-view .article-content-wrap {
+	padding-left: 0;
+	padding-right: 30px;
+}
+
+.full-width .page-header .page-title {
+	text-align: center;
+}
+
+.single-bt-event .event-block .entry-header {
+	text-align: right;
+	padding-left: 0;
+	padding-right: 30px;
+}
+
+.single-bt-event .event-schedule-wrap,
+.widget_blossomtheme_companion_cta_widget .right .button-wrap {
+	direction: ltr;
+}
+
+.text-wdgt-section .wrapper {
+	text-align: right;
+	direction: ltr;
+}
+
+.woocommerce .woocommerce-ordering select,
+.woocommerce-page .woocommerce-ordering select {
+	text-align: right;
+	padding-left: 20px;
+}
+
+.woocommerce .woocommerce-ordering::after,
+.woocommerce-page .woocommerce-ordering::after {
+	right: auto;
+	left: 0;
+	padding-right: 0;
+	padding-left: 10px;
+	width: 35px;
+}
+
+.woocommerce ul.products li.product .onsale,
+.single-product .product .onsale {
+	left: auto;
+	right: 0;
+	margin-right: 0;
+	margin-left: 10px;
+}
+
+.woocommerce ul.products li.product .onsale::before,
+.single-product .product .onsale::before,
+.woocommerce ul.products li.product .onsale::after,
+.single-product .product .onsale::after {
+	border-right: none;
+	border-left: 10px solid transparent;
+	right: auto;
+	left: -10px;
+}
+
+.wpcf7 {
+	text-align: right;
+}
+
+.header-lay3 .site-branding.icon-text .site-title-wrap,
+.header-lay5 .site-branding.icon-text .site-title-wrap {
+	text-align: right;
+}
+
+.header-lay3 .header-cart,
+.header-lay5 .header-cart {
+	margin-left: 0;
+	margin-right: 5px;
+}
+
+.header-lay4 .header-cart {
+	margin-left: 0;
+}
+
+.rtl.single .site-main .entry-meta {
+	direction: ltr;
+	text-align: right;
+}
+
+.entry-footer .tags {
+	text-align: left;
+	direction: ltr;
+}
+
+.single.rtl .article-share.sticky-share {
+	float: right;
+}
+
+.single.rtl .site-main .has-sticky-share .article-share+.entry-content {
+	padding-left: 0;
+	padding-right: 30px;
+}
+
+.single .site-main .has-sticky-share .article-share+.entry-content+footer.entry-footer {
+	padding-left: 0;
+	padding-right: 30px;
+}
+
+.rtl .back-to-top {
+	right: auto;
+	left: 30px;
+}
+
+.rtl.page.style1 header.page-header {
+	text-align: right;
+}
+
+.rtl .widget_bttk_author_bio .widget-title {
+	text-align: right;
+}
+
+.rtl .widget_bttk_social_links ul li {
+	float: right;
+}
+
+.rtl .btn-link {
+	padding-right: 0;
+	padding-left: 50px;
+}
+
+.rtl .btn-link:after {
+	right: auto;
+	left: 8px;
+	-webkit-transform: translateY(-50%) rotate(180deg);
+	-moz-transform: translateY(-50%) rotate(180deg);
+	transform: translateY(-50%) rotate(180deg);
+}
+
+.rtl .widget_bttk_description_widget .bttk-team-holder .image-holder:before {
+	transform: rotate(180deg);
+	right: auto;
+	left: 20px;
+}
+
+.rtl .btn-readmore {
+	padding-right: 30px;
+	padding-left: 65px;
+}
+
+.rtl .btn-readmore {
+	padding-right: 30px;
+	padding-left: 65px;
+}
+
+.rtl .btn-readmore:after {
+	right: auto;
+	left: 8px;
+	-webkit-transform: translateY(-50%) rotate(180deg);
+	-moz-transform: translateY(-50%) rotate(180deg);
+	transform: translateY(-50%) rotate(180deg);
+}
