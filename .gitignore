@@ -1,3 +1,4 @@
 .sonarlint
-.vscode
-ngrok.exe
+others
+processing.py
+readme.txt
