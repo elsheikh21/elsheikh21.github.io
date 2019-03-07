@@ -1763,3 +1763,7 @@ body.is-preload #footer {
 	width: 10vw;
 	height: 10vh;
 }
+
+.parttime-span {
+	font-weight: 550;
+}
